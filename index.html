@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu Burger Nabil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar dark-mode" role="navigation">
+    <button class="burger">
+      <span class="bar"></span>  
+    </button>   
+    <div class="navbar__logo">FIMOST</div>    
+    <ul class="navbar__links">
+      <li class="navbar__link-home"> <img src="images/ white.png" alt="" srcset=""> </li><br><br>
+      <li class="navbar__link first"><a href="#">CABINET</a></li><br>
+      <li class="navbar__link second"><a href="#">SERVICES</a></li><br>
+      <li class="navbar__link third"><a href="#">DEMARCHE</a></li><br>
+      <li class="navbar__link four"><a href="#">CONTACTS</a></li>
+      <div class="dent-img">
+        <img src="images/dent.png" alt="" srcset="">
+      </div>
+      <div class="social-links">
+        <img src="images/facebook.png" alt="" srcset="">
+        <img src="images/insta.png" alt="" srcset="">
+      </div>
+    </ul>   
+  </nav>
+  <main class="main-content" role="main">
+    <h1>C'est comment petit Nabil </h1>
+  </main>
+  <!-- Code injected by live-server -->
+<!-- <script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', false);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script> -->
+  <script src="main.js"></script>
+</body>
+</html>
